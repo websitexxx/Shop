@@ -13,86 +13,93 @@ a:hover{
   cursor:url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinyFDof7iQ3YFkue7SgoEgD0p5qnPA72KGGkQVpF_bYb3wwHAbhCn_yCXvWgCt_C7RKSNJDN1GacZYndk9tXXP0oC841r7p1UQv1jdNcGo5m1huthXutLaX59XJXXgoeryxQ0U8U0oBYwNoph23irkUJqXdMJOx-HHyXAUVr85pAXjgOR9uYnZMgzZ/s1600/curmiku9.png"), auto;
 }
   
-    .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20vh; /* Đảm bảo chiều cao của container bằng 100% chiều cao của viewport */
-    }
-    
-    .centered-image {
-        max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của container */
-        max-height: 100%;
-        /* Đảm bảo ảnh không vượt quá chiều cao của container */
-    }
-    
-    .rounded-box {
-        width: 300px;
-        padding: 20px;
-        margin: 20px;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Reset styles mặc định của trình duyệt */
-    body, h1, h2, h3, p, table, th, td {
-        margin: 0;
-        padding: 0;
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
-    
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: center;
-    }
-    
-    th {
-        background-color: #f2f2f2;
-    }
-    
-    .footer {
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        color: white;
-        padding: 4px;
-        animation: rainbow 1s linear infinite;
-    }
-    
-    @keyframes rainbow {
-        0% { background-position: 0% 0%; }
-        100% { background-position: 100% 0%; }
-    }
+
     
     /* Sử dụng linear-gradient để tạo màu trượt dọc */
-    .footer {
-        background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, violet, indigo, blue, green);
-        background-size: 200% 100%; /*Note: Tăng kích thước để trượt chậm hơn */
-    }
-    
+
+    table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  animation: nhapnhay 1s linear infinite;
+}
+
+@keyframes nhapnhay {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+/* Sử dụng linear-gradient để tạo màu trượt dọc */
+.footer {
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, violet, indigo, blue, green);
+  background-size: 200% 100%; /* Tăng kích thước để trượt chậm hơn */
+}
         </style>
     
 </head>
 <body>
-    Bảng giá 4g(chính thống từ viettel)
-   <table>
-        <tr>
-            <th>a</th>
-        </tr>
-        <tr>
-            <td>1</td>
-        </tr>
-        
-     </table> 
+    <h1>Bảng giá nạp thẻ</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Số tiền</th>
+            <th>Mức chiết khấu</th>
+            <th>Số tiền chiết khấu</th>
+            <th>Số tiền thanh toán</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20.000 đ</td>
+            <td>14%</td>
+            <td>2.800 đ</td>
+            <td>17.200 đ</td>
+          </tr>
+          <tr>
+            <td>50.000 đ</td>
+            <td>14%</td>
+            <td>7.000 đ</td>
+            <td>43.000 đ</td>
+          </tr>
+          <tr>
+            <td>100.000 đ</td>
+            <td>14%</td>
+            <td>14.000 đ</td>
+            <td>86.000 đ</td>
+          </tr>
+          <tr>
+            <td>200.000 đ</td>
+            <td>14%</td>
+            <td>28.000 đ</td>
+            <td>172.000 đ</td>
+          </tr>
+          <tr>
+            <td>500.000 đ</td>
+            <td>14%</td>
+            <td>70.000 đ</td>
+            <td>430.000 đ</td>
+          </tr>
+        </tbody>
+      </table>
+    
      <froter>
         <footer class="footer">
             © 2023-2024 Vận Hành Bởi Khắc Việt 
